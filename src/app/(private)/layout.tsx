@@ -1,4 +1,5 @@
 import { AvatarDropdown } from "@/components/layout/avatar-dropdown";
+import { Sidebar } from "@/components/layout/sidebar";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSubTrigger, DropdownMenuTrigger } from "@/components/ui/dropdown-menu";
 import { DropdownMenuSubContent } from "@radix-ui/react-dropdown-menu";
@@ -14,7 +15,7 @@ export default function Layout({children}:{children:ReactNode}){
                 <AvatarDropdown/>
         </div>
         <div className="flex flex-row h-screen pt-16">
-            <div className="h-full w-64 border-r">Sidebar</div>
+            <Sidebar/>
             <main className="w-full">{children}</main>
         </div>
         </div>
